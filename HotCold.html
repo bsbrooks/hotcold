@@ -50,18 +50,15 @@
 			<h1>HOT or COLD</h1>
 
 		</header>
+<script>
 
-
-		<script type="text/javascript">
-
-		function getRandom() {
-  		return Math.floor(Math.random() * 101);
-}
-var rnDom = getRandom()
-console.log (rnDom)
+	var rdmNmbr=function getRandom() {(math.random() * 100);
 	
-		</script>
+return console.log(rdmNmbr);
+}
 
+</script>
+			
 
 		<section class="game"> <!-- Guessing Section -->
 			
@@ -70,45 +67,11 @@ console.log (rnDom)
 			<form>
 				<input type="text" name="userGuess" id="userGuess" class="text" maxlength="3" autocomplete="off" placeholder="Enter your Guess" required/>
       			<input type="submit" id="guessButton" class="button" name="submit" value="Guess"/>
-			
-<script type="text/javascript">
-var myGuess=9999;
-/*var myGuess = document.getElementById("userGuess").value;*/
-console.log(myGuess);
-var valDifference = Math.abs(rnDom - myGuess);
-console.log(valDifference);
-if (valDifference == 0) {
-	var result = " Congradulations...........  You Win!!!!!!!!!!!"
-	var dispResult = result.fontcolor ("green");
-} else if (valDifference > 0 <= 5) {
-	result = "You are Red Hot! Try another guess."
-	var dispResult = result.fontcolor ("red");
-} else if (valDifference <= 10) {
-	result = "You are Hot! Try another guess."
-	var dispResult = result.fontcolor ("red");
-}else if (valDifference <= 15) {
-	result = "You are Warm! Try another guess."
-	var dispResult = result.fontcolor ("pink");
-}else {
-	result = "You are Cold! Try another guess."
-	var dispResult = result.fontcolor ("blue");
-	var iWon = "yes";
-}
-
-
-</script>
 			</form>
 			
       		<p>Guess #<span id="count">0</span>!</p>
 			
 			<ul id="guessList" class="guessBox clearfix">
-			<style type="text/css">
-
-			</style>
-<script>
-
-	document.write(dispResult);
-</script>
 
 			</ul>
 
